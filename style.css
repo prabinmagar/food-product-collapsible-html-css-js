@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+img{
+    width: 100%;
+    display: block;
+}
+#offers{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 60% auto;
+}
+.lg-title{
+    background-color: #eceaea;
+    padding: 1rem;
+}
+.lg-title h1{
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+.lg-title p{
+    font-weight: 400;
+    opacity: 0.7;
+    max-width: 500px;
+    margin: 0.6rem auto 0 auto;
+    line-height: 1.6;
+}
+.offers-list{
+    background-color: #bc1823;
+}
+.offers-list-container{
+    max-width: 1170px;
+    margin: -120px auto 0 auto;
+    padding: 0 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+.offers-item{
+    margin: 1rem;
+    max-width: 400px;
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 0 0 8px 0 rgba(35, 35, 35, 0.2);
+            box-shadow: 0 0 8px 0 rgba(35, 35, 35, 0.2);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.offers-item:hover{
+    -webkit-box-shadow: 0 0 18px 0 rgba(35, 35, 35, 0.3);
+            box-shadow: 0 0 18px 0 rgba(35, 35, 35, 0.3);
+}
+.offers-item img{
+    max-width: 180px;
+    margin: 0 auto;
+}
+.heart-icon{
+    position: absolute;
+    left: 1.4rem;
+    top: 1.4rem;
+    font-size: 1.4rem;
+    color: #bc1823;
+}
+.content{
+    height: 0;
+    overflow-y: scroll;
+    -webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+    margin-bottom: 1rem;
+}
+.content p{
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin: 0.4rem;
+}
+.content::-webkit-scrollbar{
+    width: 6px;
+}
+.content::-webkit-scrollbar-track{
+    background: transparent;
+}
+.content::-webkit-scrollbar-thumb{
+    background-color: #e4dada;
+    border-radius: 4px;
+}
+.content-show{
+    height: 100px; /*js related*/
+}
+.name{
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: block;
+}
+.collapsible-icon{
+    display: block;
+    margin-top: 0.4rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    -webkit-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+.collapsible-icon:hover{
+    color: #bc1823;
+}
+
+@media screen and (max-width: 700px){
+    #offers{
+        grid-template-rows: 30% auto;
+        overflow-x: hidden;
+    }
+    .offers-item{
+        width: 100%;
+    }
+    .lg-title h1{
+        font-size: 1rem;
+    }
+}
